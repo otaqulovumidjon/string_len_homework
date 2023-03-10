@@ -25,4 +25,4 @@ def main(s1,s2,s3):
 
     return f"[{x1}{x2}{x3}]"
 
-print(main("hello", "computer", "string"))
+print(main("hello", "computer", "string")) 
