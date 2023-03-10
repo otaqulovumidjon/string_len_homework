@@ -9,4 +9,12 @@ def main(num1, num2):
     Returns:
         str: answer
     """
-    return
+    if int(num1)>=0:
+        a=num1
+    if int(num2)>=0:
+        b=num2
+    c = int(num1) + int(num2)
+
+    return str(c)
+
+print(main("34", "56"))
