@@ -8,21 +8,19 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    if len(s1)%2==1:
-        x1 = s1
-    else:
-        x1 = ""
-
-    if len(s2)%2==1:
-        x2 = ', '+s2
-    else:
-        x2 = ""
-
-    if len(s3)%2==1:
-        x3 = ', '+s3
-    else:
-        x3 = ""
-
-    return f"[{x1}{x2}{x3}]"
-
-print(main("hello", "computer", "string")) 
+    a = ''
+    if len(s1) % 2 == 1:
+        a = s1
+    if len(s2) % 2 == 1:
+        if len(a)!=0:
+            a += ', ' + s2
+        else:
+            a = s2
+    if len(s3) % 2 == 1:
+        if len(a)!=0:
+            a+= ', ' + s3
+        else:
+            a = s3
+        
+    return f'[{a}]'
+print(main( s1="code", s2="python", s3="coder"))
