@@ -8,4 +8,18 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    return
+    if len(s1)%2==1:
+        x1 = s1
+    else:
+        return
+    if len(s2)%2==1:
+        x2 = s2
+    else:
+        return
+    if len(s3)%2==1:
+        x3 = s3
+    else:
+        return
+    return f"""[{x1}, {x2}, {x3}]"""
+
+print(main("hello", "computer", "string"))
