@@ -14,7 +14,7 @@ def main(s1,s2,s3):
         x1 = ""
 
     if len(s2)%2==1:
-        x2 = ', '+s2
+        x2 = ', '+s2 
     else:
         x2 = ""
 
