@@ -11,15 +11,18 @@ def main(s1,s2,s3):
     if len(s1)%2==1:
         x1 = s1
     else:
-        return
+        x1 = ""
+
     if len(s2)%2==1:
-        x2 = s2
+        x2 = ', '+s2
     else:
-        return
+        x2 = ""
+
     if len(s3)%2==1:
-        x3 = s3
+        x3 = ', '+s3
     else:
-        return
-    return f"""[{x1}, {x2}, {x3}]"""
+        x3 = ""
+
+    return f"[{x1}{x2}{x3}]"
 
 print(main("hello", "computer", "string"))
