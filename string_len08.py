@@ -8,4 +8,10 @@ def main(s):
     Returns:
         str: answer
     """
-    return
+    if len(s)%2==0:
+        x = s[len(s)//2-1:len(s)//2+1]
+    else:
+        x = s[len(s)//2]
+    return x
+
+print(main("123456789"))
