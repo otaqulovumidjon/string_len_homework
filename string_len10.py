@@ -8,4 +8,9 @@ def main(s):
     Returns:
         bool: answer
     """
-    return
+    if len(s)==3 and s[0]==s[2]:
+        return True
+    else:
+        return False
+
+print(main("aka"))
